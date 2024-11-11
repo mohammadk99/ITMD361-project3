@@ -1,0 +1,114 @@
+/* Applying to all pages */
+body {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-family: Georgia, serif; 
+  line-height: 1.6;
+  margin: 50px;
+  padding: 30px;
+}
+
+h1 {
+  left: 200px;
+  top: 5px;
+  font-size: 3em;
+  font-family: 'Devonshire';
+  color: #E35335;
+}
+  
+#main-nav {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: yellow;
+}
+    
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: center;
+  position: relative;
+  left: 25%;
+}
+    
+#main-nav ul li {
+  float: left;
+  position: relative;
+  text-align: center; 
+  border: 2px solid;
+}
+    
+#main-nav ul li a {
+  padding: 10px 10px;
+  display: block;
+  text-decoration: none;
+  color: red;
+}
+    
+#main-nav ul li a:hover {
+  background-color: #333;
+  color: yellow;
+}
+
+/* Applying to main page */
+#mainbody {
+  background: url('../images/background1.webp') center center fixed;
+  background-size: cover;
+  width: 62em; 
+  height: 62em; 
+  
+}
+
+.image {
+  display: block; /* Ensures the image is treated as a block-level element */
+  margin: 0 auto; /* Horizontally centers the image */
+  border: 5px solid #4CAF50; /* Adds a green border */
+  border-radius: 8px; /* Adds rounded corners */
+  padding: 10px; /* Adds some padding between the image and the border */
+  max-width: 100%; 
+}
+
+/* Applying to resume page */
+#resumebody {
+  background: url('../images/background2.jpeg') center center fixed;
+  font-size: 2em;
+  width: 100em;
+  
+}
+
+.bullets {
+  list-style: none; 
+  padding-left: 0;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 30px; 
+  font-size: 16px; 
+}
+
+.bullets li::before {
+  content: '\2611'; 
+  font-size: 20px; 
+  color: #4CAF50; 
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(2px);
+}
+
+/*Applies to cool facts */
+.facts {
+  font-family: "Brush Script MT", cursive; 
+  text-align: center; 
+  color: #FFD700; 
+  font-size: 1.5em; 
+}
+
+#factsbody {
+  background: url('../images/background2.jpeg') center center fixed;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
