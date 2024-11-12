@@ -6,6 +6,7 @@
   <title>Google Maps</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvlezdn_3zUXWs4JD6dFSJUQYUVF937mM&callback=initMap" async defer></script>
 </head>
 <body class="map-body">
    <h1>Map</h1>  
@@ -14,10 +15,8 @@
       <div id="map"></div>
     </div>
   
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvlezdn_3zUXWs4JD6dFSJUQYUVF937mM&callback=initMap" async defer></script>
     <script>
       let map;
-  
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 41.885986605790244, lng: -87.62793067686403 },
@@ -37,7 +36,7 @@
         marker.addListener("click", () => {
           infoWindow.open(map, marker);
         });
-        /*
+        
         const centerControlDiv = document.createElement("div");
         const centerControl = createCenterControl(centerControlDiv, map, marker);
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
@@ -55,7 +54,7 @@
           map.setZoom(12);
         });
   
-        return controlUI; */
+        return controlUI; 
       } 
     </script>
   </body>
