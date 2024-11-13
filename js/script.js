@@ -1,6 +1,9 @@
 
 // for maps.html
+console.log("Beginning of file");
 function init(){
+	console.log("init function");
+
 	var el = document.getElementById('canvas');
 	var myLocation = new google.maps.LatLng(32.85752946561114, -117.25767633483069);
 	var mapOptions = {
@@ -32,3 +35,7 @@ function init(){
 }
 
 google.maps.event.addDomListener(window, 'load', init);
+window.addEventListener('load', init);
+console.log("end of file");
+
+
