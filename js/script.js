@@ -4,7 +4,7 @@ console.log("Beginning of file");
 function init(){
 	console.log("init function");
 
-	var el = document.getElementById('map-container');
+	var el = document.getElementById('map');
 	var myLocation = new google.maps.LatLng(32.85752946561114, -117.25767633483069);
 	var mapOptions = {
 		center: myLocation,
